@@ -1,0 +1,42 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="fPIISru4n2RynvKITpHv">
+    <mxGraphModel dx="766" dy="454" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ALSc7FIH-W63R4evaKb5-1" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Customer" vertex="1">
+          <mxGeometry height="310" width="210" x="150" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="ALSc7FIH-W63R4evaKb5-2" parent="ALSc7FIH-W63R4evaKb5-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;- id : Long&lt;/div&gt;&lt;div&gt;- name : String&lt;/div&gt;&lt;div&gt;- email : String&lt;/div&gt;&lt;div&gt;- address : Address&lt;/div&gt;&lt;div&gt;- tags : String[]&amp;nbsp;&lt;br&gt;- &lt;u&gt;customerCount : int&lt;/u&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="104" width="210" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ALSc7FIH-W63R4evaKb5-3" parent="ALSc7FIH-W63R4evaKb5-1" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="210" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="ALSc7FIH-W63R4evaKb5-4" parent="ALSc7FIH-W63R4evaKb5-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;+ Customer()&lt;/div&gt;&lt;div&gt;+ Customer(id : Long, name : String,&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;email : String,&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;address :Address)&lt;/div&gt;&lt;div&gt;+ getId() : Long&lt;/div&gt;&lt;div&gt;+ getName() : String&lt;/div&gt;&lt;div&gt;+ getEmail() : String&lt;/div&gt;&lt;div&gt;+ getAddress() : Address&lt;/div&gt;&lt;div&gt;+ getTags() : String[]&amp;nbsp;&lt;br&gt;+ setTags(tags : String[]) : void&amp;nbsp;&lt;br&gt;+ &lt;u&gt;getCustomerCount() : int&lt;/u&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="172" width="210" y="138" as="geometry" />
+        </mxCell>
+        <mxCell id="ALSc7FIH-W63R4evaKb5-5" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Address" vertex="1">
+          <mxGeometry height="238" width="220" x="510" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="ALSc7FIH-W63R4evaKb5-6" parent="ALSc7FIH-W63R4evaKb5-5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;- street : String&lt;/div&gt;&lt;div&gt;- city : String&lt;/div&gt;&lt;div&gt;- postcode : String&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="64" width="220" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ALSc7FIH-W63R4evaKb5-7" parent="ALSc7FIH-W63R4evaKb5-5" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="26" width="220" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="ALSc7FIH-W63R4evaKb5-8" parent="ALSc7FIH-W63R4evaKb5-5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;+ Address()&lt;/div&gt;&lt;div&gt;+ Address(street : String, city : String,&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;postcode : String)&lt;/div&gt;&lt;div&gt;+ getStreet() : String&lt;/div&gt;&lt;div&gt;+ getCity() : String&lt;/div&gt;&lt;div&gt;+ getPostcode() : String&lt;/div&gt;" vertex="1">
+          <mxGeometry height="122" width="220" y="116" as="geometry" />
+        </mxCell>
+        <mxCell id="KLs-DHdDl728DgKp9uI_-1" edge="1" parent="1" source="ALSc7FIH-W63R4evaKb5-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.015;entryY=0.339;entryDx=0;entryDy=0;entryPerimeter=0;" target="ALSc7FIH-W63R4evaKb5-8">
+          <mxGeometry relative="1" x="0.006" as="geometry">
+            <Array as="points">
+              <mxPoint x="440" y="305" />
+              <mxPoint x="440" y="307.4" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
