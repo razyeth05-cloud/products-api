@@ -22,10 +22,17 @@ public class ProductController {
         return productService.getProductById(id).orElse(null);
     }
 
+
+// POST /products returns only the parent class fields (id, name, price)
+// because the controller accepts a Product object, so Jackson deserialises the
+// request into Product rather than DigitalProduct. The subclass-specific fields
+// (downloadUrl and fileSizeMB) are therefore not retained.
     @PostMapping("/products")
     public Product addProduct(@RequestBody Product product) {
         return productService.addProduct(product);
     }
+
+
 
     @GetMapping("/products/search")
     public List<Product> search(@RequestParam String name) {
